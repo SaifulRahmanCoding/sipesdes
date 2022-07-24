@@ -1,0 +1,206 @@
+body{
+	font-family: "Tahoma";
+	color: #3E3E3E !important;
+	background-color: #F6F6F6;/*#FBFBFB*/
+}
+/*atur font size*/
+form, input, option,select, textarea, #registrasi .opsi-login a, #login .opsi-login a{
+	font-size: 14px !important;
+}
+select, option, .form-check input{
+	cursor: pointer;
+}
+#registrasi .opsi-login p, #login .opsi-login p{
+	font-size: 10px;
+}
+
+.container{
+	max-width: 1100px;
+}
+
+#sidebar{
+	background-color: #FFF;
+	font-size: 14px;
+	width: 280px;
+	height: 100%;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	display: block;
+	overflow: auto;
+	transition: 0.5s;
+}
+#konten{
+	width: 100%;
+	min-width: 800px;
+	margin-left: 280px;
+	overflow-x: auto;
+	transition: 0.5s;
+}
+#header{
+	position: sticky;
+	top: 0;
+	margin-left: 280px;
+	height: 55px;
+	background-color: #179C22;
+	color: white;
+	z-index: auto;
+	transition: 0.5s;
+}
+#header .bars.btn{
+	background: transparent;
+}
+#header .bars.btn i{
+	font-size: 24px !important;
+}
+#header .bars.btn:focus{
+	box-shadow: none !important;
+}
+/*logo*/
+#sidebar .head-sidebar .logo img{
+	max-height: 40px;
+}
+#header .logout{
+	font-size: 14px;
+	transition: 0.5s;
+	padding: 5px;
+	border-radius: 10px;
+}
+#header .logout:hover{
+	background-color: #067829 !important;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+/*bagian menu sidebar*/
+.head-sidebar{
+	border-bottom: 1px solid #E5E4E4;
+}
+
+.nama-aplikasi h1{
+	font-size: 18px;
+}
+.menu-sidebar li{
+	font-size: 15px;
+	padding-left: 8px !important;
+}
+.menu-sidebar li a{
+	color: #3E3E3E !important;
+}
+.menu-sidebar li a:hover{
+	color: white !important;
+}
+.menu-sidebar li a:focus{
+	color: #3E3E3E;
+}
+.menu-sidebar li:hover, .menu-sidebar .accordion-button:hover, .menu-sidebar .navlink{
+	color: white;
+	transition: 0.5s;
+	background-color: #179C22;
+}
+.menu-sidebar .accordion-button{
+	font-family: "Tahoma";
+	color: #3E3E3E;
+	border-radius: 0 !important;
+	margin-bottom: 1px;
+	margin-top: -2.3px;
+}
+.menu-sidebar .accordion-button:focus{
+	box-shadow: none !important;
+	color: white;
+	background-color: #179C22;
+}
+.menu-sidebar .accordion-button:not(.collapsed){
+	background-color: #179C22 !important;
+	box-shadow: none !important;
+	color: white !important;
+}
+.accordion-button:not(.collapsed)::after{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")!important;
+}
+.menu-sidebar li ul li{
+	list-style: none;
+}
+.menu-sidebar .nav-item{
+	margin-bottom: 3px;
+}
+.list-unstyled li{
+	border-radius: 5px !important;
+}
+/*end sidebar*/
+
+/*bagian konten*/
+#header .kanan{
+	float: right;
+	margin-right: 20px;
+}
+.isi-konten .wrap{
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+/*table*/
+table{
+	font-size: 12px;
+}
+th{
+	background-color: #787878 !important;
+	color: whitesmoke !important;
+	vertical-align: middle;
+}
+/*form registrasi*/
+#registrasi, #login{
+	height: 600px;
+}
+#registrasi img, #login img{
+	max-width: 60px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+	font-size: 11px;
+	background-color: #E9E9E9;
+	width: 100%;
+}
+
+.box-dashboard{
+	border-left: 4px solid #0CD11C;
+	max-width: 162.450px !important;
+}
+
+.disclaimer{
+	display: none !important;
+}
+
+/*animasi toggle*/
+.toggleNav{
+	margin-left: 0 !important;
+}
+.toggleNav2{
+	margin-left: -280px !important;
+
+}
+
+/*bagian index bentuk cursor*/
+.box-dashboard p{
+	cursor: default;
+}
+
+/*costum scrollbar*/
+::-webkit-scrollbar{
+	width: 17px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #d6dee1;
+	border-radius: 20px;
+	border: 5px solid transparent;
+	background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+::-webkit-scrollbar-track{
+	background-color: transparent;
+}
