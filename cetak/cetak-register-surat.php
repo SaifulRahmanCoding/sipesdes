@@ -254,4 +254,3 @@ for($i=0;$i<$jml_lembar;$i++){
 	$pdf->Ln();
 }
 $pdf->Output();
-?>
