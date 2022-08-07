@@ -5,8 +5,10 @@ require_once('../cek-login.php');
 if ($sessionStatus==false) {
 	header("Location: ../login.php");
 }
+$date_awal = (isset($_POST['date_awal'])) ? $_POST['date_awal'] : "";
+$date_akhir = (isset($_POST['date_akhir'])) ? $_POST['date_akhir'] : "";
+$query = "SELECT * FROM tb_register_surat WHERE tgl_surat  BETWEEN '$date_awal' AND '$date_akhir'";
 
-$query = "SELECT * FROM tb_register_surat";
 $result = mysqli_query($db,$query);
 // hitung banyak data
 $row = mysqli_num_rows($result);
