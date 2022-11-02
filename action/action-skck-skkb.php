@@ -141,7 +141,7 @@ if ($opsi == "input") {
 
 	if($update_skck_skkb==false) { ?>
 		<script type='text/javascript'>
-			alert('Gagal Insert Data ke <?php echo $jenis_surat ?>');
+			alert('Gagal Update Data ke <?php echo $jenis_surat ?>');
 			window.location.href="../edit-surat.php?no_surat=<?php echo $no_surat?>&jenis=<?php echo $jenis_surat?>";
 		</script>
 	<?php }else{

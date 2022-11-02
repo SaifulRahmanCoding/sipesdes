@@ -127,7 +127,7 @@ if ($opsi == "input") {
 
 	if($update_sktm==false) { ?>
 		<script type='text/javascript'>
-			alert('Gagal Insert Data ke SKTM');
+			alert('Gagal Update Data ke SKTM');
 			window.location.href="../edit-surat.php?no_surat=<?php echo $no_surat?>&jenis=<?php echo $jenis_surat?>";
 		</script>
 	<?php }else{

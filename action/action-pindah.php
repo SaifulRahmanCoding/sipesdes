@@ -138,7 +138,7 @@ if ($opsi == "input") {
 	$update_pindah = mysqli_query($db,$query);
 	if($update_pindah==false) { ?>
 		<script type='text/javascript'>
-			alert('Gagal Insert Data ke pindah');
+			alert('Gagal Update Data ke pindah');
 			window.location.href="../edit-surat.php?no_surat=<?php echo $no_surat?>&jenis=<?php echo $jenis_surat?>";
 		</script>
 	<?php }else{
